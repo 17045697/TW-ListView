@@ -31,7 +31,6 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = getIntent();
         String year = i.getStringExtra("year");
         tvYear.setText(year);
-        String years = tvYear.getText().toString();
 
         module = new ArrayList<Module>();
 

@@ -4,7 +4,7 @@ public class Module {
 
     private String moduleCode;
     private boolean prog;
-    public Module(String name, boolean prog) {
+    public Module(String moduleCode, boolean prog) {
         this.moduleCode = moduleCode;
         this.prog = prog;
     }
