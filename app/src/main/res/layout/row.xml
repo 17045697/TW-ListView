@@ -16,5 +16,6 @@
         android:layout_width="325dp"
         android:layout_height="67dp"
         android:layout_weight="0"
-        android:text="TextView" />
+        android:text="TextView"
+        android:visibility="visible" />
 </LinearLayout>

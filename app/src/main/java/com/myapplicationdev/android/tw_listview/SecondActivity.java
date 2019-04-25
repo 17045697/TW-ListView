@@ -35,18 +35,19 @@ public class SecondActivity extends AppCompatActivity {
 
         module = new ArrayList<Module>();
 
-        if (years == "Year 1") {
+        if (year.equalsIgnoreCase("Year 1")) {
             module.add(new Module("C111", true));
             module.add(new Module("C112", false));
             module.add(new Module("C113", true));
-        } else if (years == "Year 2") {
+
+        } else if (year.equalsIgnoreCase("Year 2")) {
             module.add(new Module("C208", true));
             module.add(new Module("C200", false));
-            module.add(new Module("C346", true));
+            module.add(new Module("C346", false));
 
         } else {
             module.add(new Module("C207", true));
-            module.add(new Module("C206", false));
+            module.add(new Module("C206", true));
             module.add(new Module("C343", true));
 
         }

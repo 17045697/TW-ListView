@@ -33,27 +33,25 @@ public class ModuleAdapter extends ArrayAdapter<Module> {
 
         View rowView = inflater.inflate(R.layout.row, parent, false);
 
-        // Get the TextView object
+
         tvModuleCode =         rowView.findViewById(R.id.tvModuleCode);
-        // Get the ImageView object
+
         ivProg =             rowView.findViewById(R.id.ivProg);
 
 
-        // The parameter "position" is the index of the
-        //  row ListView is requesting.
-        //  We get back the food at the same index.
+
         Module currentModule = module.get(position);
-        // Set the TextView to show the food
+
 
         tvModuleCode.setText(currentModule.getModuleCode());
-        // Set the image to star or nostar accordingly
+
         if(currentModule.isProg()) {
             ivProg.setImageResource(R.drawable.prog);
         }
         else {
             ivProg.setImageResource(R.drawable.nonprog);
         }
-        // Return the nicely done up View to the ListView
+
         return rowView;
     }
 
