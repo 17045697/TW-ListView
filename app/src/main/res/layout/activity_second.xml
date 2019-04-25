@@ -11,14 +11,8 @@
         android:id="@+id/tvYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Year 2"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
 
-    <ListView
-        android:id="@+id/lvModuleCode"
-        android:layout_width="match_parent"
-
-        android:layout_height="match_parent" />
 
 
 </LinearLayout>
